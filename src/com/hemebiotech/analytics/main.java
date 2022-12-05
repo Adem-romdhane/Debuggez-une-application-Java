@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class main {
     public static void main(String args[]) throws IOException {
@@ -11,6 +12,8 @@ public class main {
         new SortList().SortList("symptoms.txt","symptoms.txt");
         AnalyticsCounter analyticsCounter= new AnalyticsCounter();
         analyticsCounter.ReadFile();
+
+        new SortList().SortList("results.out","results.out");
 
     }
 }
