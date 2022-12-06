@@ -1,8 +1,6 @@
 package com.hemebiotech.analytics;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,5 +41,6 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		
 		return result;
 	}
+
 
 }

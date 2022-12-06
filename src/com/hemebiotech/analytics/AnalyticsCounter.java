@@ -1,6 +1,8 @@
 package com.hemebiotech.analytics;
 
 import java.io.*;
+import java.util.HashMap;
+import java.util.Objects;
 
 public class AnalyticsCounter {
     private static int headacheCount = 0;
@@ -27,6 +29,7 @@ public class AnalyticsCounter {
                 pupilCount++;
             }
 
+
             line = reader.readLine();
         }
 
@@ -37,5 +40,8 @@ public class AnalyticsCounter {
         writer.write("dialated pupils: " + pupilCount + "\n");
         writer.close();
     }
+
+
+
 
 }
